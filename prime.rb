@@ -1,13 +1,14 @@
 def prime?(number)
-  prime_numbers = [1,2]
-  i = 0
-  while 2 ** i - 1 <= number
-    prime_numbers << (2 ** i - 1)
-    i += 1
-  end
-  if prime_numbers.include?(number)
-    true
-  else
+  i = 1
+  if number.even?
     false
+  else
+    while i < number
+      if number % i == 0
+        false
+      else
+        i += 1
+      end
+    end
   end
 end
