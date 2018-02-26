@@ -1,7 +1,7 @@
 def prime?(number)
-  if number == 2 || number == 1
+  if number == 2
     true
-  elsif number <=0 || number.even?
+  elsif number <=1 || number.even?
     false
   else
     divisors = (2..number/2).to_a
