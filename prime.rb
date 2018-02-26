@@ -1,6 +1,6 @@
 def prime(integer)
   prime_numbers = []
-  i = 2
+  i = 0
   while (2 ** i) - 2 < integer
     prime_numbers << (2 ** i) - 1
     i += 1
