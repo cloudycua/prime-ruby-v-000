@@ -6,9 +6,9 @@ def prime?(number)
   else
     divisors = (2..number/2).to_a
     if divisors.any? {|i| number % i == 0}
-      true
-    else
       false
+    else
+      true
     end
   end
 end
