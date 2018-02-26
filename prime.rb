@@ -1,14 +1,3 @@
 def prime?(number)
-  if number <= 0 || number.even? && number != 2
-    false
-  else
-    i = 1
-    while i < number - 1
-      if number % i == 0
-        false
-      else
-        i += 1
-      end
-    end
-  end
+  (2..n/2).none?{|i| number % i == 0}
 end
