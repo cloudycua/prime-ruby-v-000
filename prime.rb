@@ -1,7 +1,5 @@
 def prime?(number)
-  if number <= 0
-    false
-  elsif number.even? && number > 2
+  if number <= 0 || number.even? && number != 2
     false
   else
     i = 1
